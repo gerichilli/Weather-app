@@ -30,7 +30,7 @@ function App() {
   // Weather List 
   const {response, isLoading, error} = UseFetch(`${WEATHER_API_URL}${city}${WEATHER_API_KEY}`);
   // Current Weather
-  const {response: currentWeather, isLoading: isCurrentLoading, error: currentError} = UseFetch(`${WEATHER_CURRENT_API_URL}hanoi${WEATHER_API_KEY}`);
+  const {response: currentWeather, isLoading: isCurrentLoading, error: currentError} = UseFetch(`${WEATHER_CURRENT_API_URL}${city}${WEATHER_API_KEY}`);
 
   const renderCurrentWeather = () => {
     if(currentError && ready) return null
