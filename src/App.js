@@ -17,6 +17,7 @@ function App() {
     async function fetchCity() {
       try {
         const res = await axios(GETIP_LINK);
+        console.log(res.data.city);
         setCity(res.data.city)
         setReady(true)
       } catch(error) {

@@ -25,13 +25,12 @@ const UseFetch = (url, config) => {
 
     useEffect(() => {
         dispatch({type: "loading"})
-        console.log(url);
         async function fetchData() {
             try {
                 const res = await axios(url, config)
                 dispatch({type: "success", payload: res})
             } catch(error) {
-                dispatch({type: "error", payload: "Sorry we couldn't find your city. Please confirm and try again."})
+                dispatch({type: "error", payload: "Sorry, we couldn't indentify your city. Please confirm and use our search tool."})
             } 
         }
         
