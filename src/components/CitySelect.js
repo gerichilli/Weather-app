@@ -18,7 +18,10 @@ function CitySelect({ onChangeCity }) {
             placeholder="Search"
             onChange={(e) => setChangeCity(e.target.value)}
             />
-            <SearchIcon className="icon"/>
+            <button type="submit">
+                <SearchIcon className="icon"/>
+            </button>
+            
         </form>
     )
 }

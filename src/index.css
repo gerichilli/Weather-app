@@ -69,14 +69,25 @@ header {
   font-size: 1.8rem;
 }
 
-.search .icon {
-  width: 2.4rem;
-  height: 2.4rem;
+.search button {
+  background: transparent;
+  border: none;
+  outline: none;
+
+  width: 6rem;
+  height: 6rem;
   color: #ababab;
   position: absolute;
-  left: 2rem;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
+
+  font-size: inherit;
+}
+
+.search button:focus {
+  border: none;
+  outline: none;
 }
 
 .banner {
